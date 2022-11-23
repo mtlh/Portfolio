@@ -14,34 +14,32 @@ import Icon from "astro-icon";
 				In-depth applications built with a variety of skills as listed below.
 			</p>
 		</div>
-		<div class="grid grid-cols-2 place-items-center antialiased">
-			<div class="p-2">
+		<div class="grid items-stretch gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 my-12 antialiased">
+			<div class="relative flex h-full flex-col p-2">
 				<img src="https://mharvey.netlify.app/images/mymovies_desktop.png" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
 				<div class="relative px-4 -mt-16">
-					<div class="absolute top-0 right-0 p-8">
-						<a
-							class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800"
-							href="#projects"
-						>
-							<Icon name="tabler:movie" class="w-5 h-5 mr-1 -ml-1.5" /> Live Demo
-						</a>
-						<a
-							class="btn text-white border bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800"
-							href="#projects"
-						>
-							<Icon name="tabler:brand-github" class="w-5 h-5 mr-1 -ml-1.5" /> Github
-						</a>
-					</div>
 					<div class="bg-white p-6 rounded-lg shadow-xl">
-						<div class="mb-6 mt-3">
+						<div class="mb-6 mt-1">
 							<h3 class="mb-4 text-3xl font-bold">MyMovies</h3>
+							<a
+								class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 mb-4"
+								href="#projects"
+							>
+								<Icon name="tabler:movie" class="w-5 h-5 mr-1 -ml-1.5" /> Live Demo
+							</a>
+							<a
+								class="btn text-white border bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 mb-4"
+								href="#projects"
+							>
+								<Icon name="tabler:brand-github" class="w-5 h-5 mr-1 -ml-1.5" /> Github
+							</a>
 							<p class="mb-4">
 								Movie site made using TMDb API that allows users to search new movies and actors,
 								 create lists and answer trivia questions.
 							</p>
 							<div class="grid max-w-none grid-cols-8 sm:flex-row sm:justify-center gap-4">
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80%" alt="HTML" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											HTML
@@ -49,7 +47,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>	
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80%" alt="CSS" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											CSS
@@ -57,7 +55,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="80%" alt="JavaScript" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											JavaScript
@@ -65,7 +63,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" alt="TypeScript" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											TypeScript
@@ -73,7 +71,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80%" alt="React" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											React
@@ -81,7 +79,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="80%" alt="Tailwind" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											Tailwind
@@ -89,7 +87,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80%" alt="Bootstrap" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											Bootstrap
@@ -101,33 +99,31 @@ import Icon from "astro-icon";
 					</div>
 				</div>
 			</div>
-			<div class="p-2">
-				<img src="https://mharvey.netlify.app/images/mymovies_desktop.png" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
+			<div class="relative flex h-full flex-col p-2">
+				<img src="https://mharvey.netlify.app/images/spoura_desktop.webp" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
 				<div class="relative px-4 -mt-16">
-					<div class="absolute top-0 right-0 p-8">
-						<a
-							class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800"
-							href="#projects"
-						>
-							<Icon name="tabler:basket" class="w-5 h-5 mr-1 -ml-1.5" /> Live Demo
-						</a>
-						<a
-							class="btn text-white border bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800"
-							href="#projects"
-						>
-							<Icon name="tabler:brand-github" class="w-5 h-5 mr-1 -ml-1.5" /> Github
-						</a>
-					</div>
 					<div class="bg-white p-6 rounded-lg shadow-xl">
-						<div class="mb-6 mt-3">
+						<div class="mb-6 mt-1">
 							<h3 class="mb-4 text-3xl font-bold">Spoura</h3>
+							<a
+								class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 mb-4"
+								href="#projects"
+							>
+								<Icon name="tabler:basket" class="w-5 h-5 mr-1 -ml-1.5" /> Live Demo
+							</a>
+							<a
+								class="btn text-white border bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 mb-4"
+								href="#projects"
+							>
+								<Icon name="tabler:brand-github" class="w-5 h-5 mr-1 -ml-1.5" /> Github
+							</a>
 							<p class="mb-4">
 								Movie site made using TMDb API that allows users to search new movies and actors,
 								 create lists and answer trivia questions.
 							</p>
 							<div class="grid max-w-none grid-cols-8 sm:flex-row sm:justify-center gap-4">
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80%" alt="HTML" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											HTML
@@ -135,7 +131,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>	
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80%" alt="CSS" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											CSS
@@ -143,7 +139,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="80%" alt="JavaScript" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											JavaScript
@@ -151,7 +147,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" alt="TypeScript" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											TypeScript
@@ -159,7 +155,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80%" alt="React" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											React
@@ -167,7 +163,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="80%" alt="Tailwind" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											Tailwind
@@ -175,7 +171,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80%" alt="Bootstrap" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											Bootstrap
@@ -187,33 +183,31 @@ import Icon from "astro-icon";
 					</div>
 				</div>
 			</div>
-			<div class="p-2">
-				<img src="https://mharvey.netlify.app/images/mymovies_desktop.png" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
+			<div class="relative flex h-full flex-col p-2">
+				<img src="https://mharvey.netlify.app/images/parallax_desktop.webp" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
 				<div class="relative px-4 -mt-16">
-					<div class="absolute top-0 right-0 p-8">
-						<a
-							class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800"
-							href="#projects"
-						>
-							<Icon name="tabler:bug" class="w-5 h-5 mr-1 -ml-1.5" /> Live Demo
-						</a>
-						<a
-							class="btn text-white border bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800"
-							href="#projects"
-						>
-							<Icon name="tabler:brand-github" class="w-5 h-5 mr-1 -ml-1.5" /> Github
-						</a>
-					</div>
 					<div class="bg-white p-6 rounded-lg shadow-xl">
-						<div class="mb-6 mt-3">
+						<div class="mb-6 mt-1">
 							<h3 class="mb-4 text-3xl font-bold">IssueTrack</h3>
+							<a
+								class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 mb-4"
+								href="https://issuetrack.vercel.app/" target="_blank"
+							>
+								<Icon name="tabler:bug" class="w-5 h-5 mr-1 -ml-1.5" /> Live Demo
+							</a>
+							<a
+								class="btn text-white border bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 mb-4"
+								href="https://github.com/Matthew-Harvey/IssueTrack" target="_blank"
+							>
+								<Icon name="tabler:brand-github" class="w-5 h-5 mr-1 -ml-1.5" /> Github
+							</a>
 							<p class="mb-4">
-								Movie site made using TMDb API that allows users to search new movies and actors,
-								 create lists and answer trivia questions.
+								This project was made to demonstrate a variety of skills by producing
+								 a full stack app that allows users + teams to collaborate on issues within their systems.
 							</p>
 							<div class="grid max-w-none grid-cols-8 sm:flex-row sm:justify-center gap-4">
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80%" alt="HTML" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											HTML
@@ -221,7 +215,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>	
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80%" alt="CSS" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											CSS
@@ -229,15 +223,15 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" width="80%" alt="MaterialUI" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
-											JavaScript
+											MaterialUI
 										</span>
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" alt="TypeScript" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											TypeScript
@@ -245,7 +239,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80%" alt="React" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											React
@@ -253,18 +247,26 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" width="80%" alt="Nextjs" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
-											Tailwind
+											Nextjs
 										</span>
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="80%" alt="Nodejs" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
-											Bootstrap
+											NodeJS
+										</span>
+									</div>
+								</div>
+								<div class="group cursor-pointer relative inline-block text-center">
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" width="80%" alt="Firebase" />
+									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
+										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
+											Firebase
 										</span>
 									</div>
 								</div>
@@ -273,33 +275,31 @@ import Icon from "astro-icon";
 					</div>
 				</div>
 			</div>
-			<div class="p-2">
-				<img src="https://mharvey.netlify.app/images/mymovies_desktop.png" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
+			<div class="relative flex h-full flex-col p-2">
+				<img src="	https://mharvey.netlify.app/images/Chess_picture.webp" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
 				<div class="relative px-4 -mt-16">
-					<div class="absolute top-0 right-0 p-8">
-						<a
-							class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800"
-							href="#projects"
-						>
-							<Icon name="tabler:template" class="w-5 h-5 mr-1 -ml-1.5" /> Live Demo
-						</a>
-						<a
-							class="btn text-white border bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800"
-							href="#projects"
-						>
-							<Icon name="tabler:brand-github" class="w-5 h-5 mr-1 -ml-1.5" /> Github
-						</a>
-					</div>
 					<div class="bg-white p-6 rounded-lg shadow-xl">
 						<div class="mb-6 mt-3">
 							<h3 class="mb-4 text-3xl font-bold">MH Blog</h3>
+							<a
+								class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 mb-4"
+								href="#projects"
+							>
+								<Icon name="tabler:template" class="w-5 h-5 mr-1 -ml-1.5" /> Live Demo
+							</a>
+							<a
+								class="btn text-white border bg-gray-900 hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-800 mb-4"
+								href="#projects"
+							>
+								<Icon name="tabler:brand-github" class="w-5 h-5 mr-1 -ml-1.5" /> Github
+							</a>
 							<p class="mb-4">
 								Movie site made using TMDb API that allows users to search new movies and actors,
 								 create lists and answer trivia questions.
 							</p>
 							<div class="grid max-w-none grid-cols-8 sm:flex-row sm:justify-center gap-4">
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80%" alt="HTML" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											HTML
@@ -307,7 +307,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>	
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80%" alt="CSS" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											CSS
@@ -315,7 +315,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="80%" alt="JavaScript" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											JavaScript
@@ -323,7 +323,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" alt="TypeScript" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											TypeScript
@@ -331,7 +331,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80%" alt="React" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											React
@@ -339,7 +339,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="80%" alt="Tailwind" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											Tailwind
@@ -347,7 +347,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80%" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="80%" alt="Bootstrap" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											Bootstrap
