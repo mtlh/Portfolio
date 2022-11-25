@@ -4,52 +4,48 @@ import Icon from "astro-icon";
 
 <section class="relative scroll-mt-16 bg-primary-100 dark:bg-slate-800" id="links">
 	<div class="max-w-screen-md mx-auto p-5">
-		<div class="px-4 py-8 md:py-16 sm:px-6 mx-auto md:px-24 lg:px-8 lg:py-20 max-w-6xl">
-			<div class="grid grid-cols-3 row-gap-8 md:grid-cols-6">
-				<div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0 items-center">
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center">
+		<div class="px-8 py-8 md:py-16 sm:px-6 mx-auto md:px-24 lg:px-8 lg:py-20 max-w-6xl">
+			<div class="grid grid-cols-3 gap-4 md:grid-cols-6">
+				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg"
+					href="/blog"
+				>
+					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center cursor-pointer">
+						<Icon name="tabler:note" class="w-15 h-15" />
+					</div>
+				</a>
+				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg">
+					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center cursor-pointer">
+						<Icon name="tabler:sun" class="w-15 h-15" data-aw-toggle-color-scheme />
+					</div>
+				</a>
+				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg"
+					href="https://github.com/matthew-harvey/" target="_blank"
+				>
+					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center cursor-pointer">
 						<Icon name="tabler:brand-github" class="w-15 h-15" />
 					</div>
-					<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-						Github
-					</p>
-				</div>
-				<div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0 items-center">
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center">
-						<Icon name="tabler:brand-github" class="w-15 h-15" />
-					</div>
-					<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-						Github
-					</p>
-				</div>
-				<div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0 items-center">
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center">
-						<Icon name="tabler:brand-github" class="w-15 h-15" />
-					</div>
-					<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-						Github
-					</p>
-				</div>
-				<div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0">
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center">
+				</a>
+				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg"
+					href="https://www.linkedin.com/in/m-harvey/" target="_blank"
+				>
+					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center cursor-pointer">
 						<Icon name="tabler:brand-linkedin" class="w-15 h-15" />
 					</div>
-					<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base text-center">
-						Linkedin
-					</p>
-				</div>
-				<div class="text-center md:border-r dark:md:border-slate-500 font-heading">
+				</a>
+				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg"
+					href="https://mharvey.netlify.app/MatthewHarvey-CV.pdf" target="_blank"
+				>
 					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500">
 						<Icon name="tabler:file-info" class="w-15 h-15" />
 					</div>
-					<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">CV</p>
-				</div>
-				<div class="text-center md:border-r dark:md:border-slate-500 font-heading">
-					<div class="text-2xl items-center font-bold lg:text-2xl xl:text-2xl text-primary-500 font-heading">
+				</a>
+				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg" 
+					href="mailto:matthewtlharvey@gmail.com" target="_blank"
+				>
+					<div class="text-2xl items-center font-bold lg:text-2xl xl:text-2xl text-primary-500 font-heading cursor-pointer">
 						<Icon name="tabler:mail-forward" class="w-15 h-15" />
 					</div>
-					<p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">Email</p>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
