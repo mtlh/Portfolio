@@ -1,5 +1,6 @@
 ---
 import Icon from "astro-icon";
+import { Picture } from '@astrojs/image/components';
 
 ---
 
@@ -16,7 +17,14 @@ import Icon from "astro-icon";
 		</div>
 		<div class="grid items-stretch gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 my-12 antialiased">
 			<div class="relative flex h-full flex-col p-2">
-				<img src="../../src/assets/images/mymovies_portfolio.webp" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
+				<Picture
+					class="w-full object-cover object-center rounded-lg shadow-md"
+					src={import('~/assets/images/mymovies_portfolio.webp')}
+					widths={[]}
+					sizes="100vw"
+					alt="MyMovies"
+					aspectRatio="auto:auto"
+				/>
 				<div class="relative px-4 -mt-16">
 					<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-xl">
 						<div class="mb-6 mt-1">
@@ -100,7 +108,14 @@ import Icon from "astro-icon";
 				</div>
 			</div>
 			<div class="relative flex h-full flex-col p-2">
-				<img src="../../src/assets/images/issuetrack_portfolio.webp" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
+				<Picture
+					class="w-full object-cover object-center rounded-lg shadow-md"
+					src={import('~/assets/images/issuetrack_portfolio.webp')}
+					widths={[]}
+					sizes="100vw"
+					alt="Spoura"
+					aspectRatio="auto:auto"
+				/>
 				<div class="relative px-4 -mt-16">
 					<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-xl">
 						<div class="mb-6 mt-1">
@@ -184,7 +199,14 @@ import Icon from "astro-icon";
 				</div>
 			</div>
 			<div class="relative flex h-full flex-col p-2">
-				<img src="../../src/assets/images/issuetrack_portfolio.webp" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
+				<Picture
+					class="w-full object-cover object-center rounded-lg shadow-md"
+					src={import('~/assets/images/issuetrack_portfolio.webp')}
+					widths={[]}
+					sizes="100vw"
+					alt="IssueTrack"
+					aspectRatio="auto:auto"
+				/>
 				<div class="relative px-4 -mt-16">
 					<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-xl">
 						<div class="mb-6 mt-1">
@@ -276,7 +298,14 @@ import Icon from "astro-icon";
 				</div>
 			</div>
 			<div class="relative flex h-full flex-col p-2">
-				<img src="../../src/assets/images/mymovies_portfolio.webp" alt="myMovies" class="w-full object-cover object-center rounded-lg shadow-md">  
+				<Picture
+					class="w-full object-cover object-center rounded-lg shadow-md"
+					src={import('~/assets/images/mymovies_portfolio.webp')}
+					widths={[]}
+					sizes="100vw"
+					alt="MHblog"
+					aspectRatio="auto:auto"
+				/>
 				<div class="relative px-4 -mt-16">
 					<div class="bg-white dark:bg-slate-900 p-6 rounded-lg shadow-xl">
 						<div class="mb-6 mt-3">
@@ -323,7 +352,7 @@ import Icon from "astro-icon";
 									</div>
 								</div>
 								<div class="group cursor-pointer relative inline-block text-center">
-									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80%" alt="TypeScript" />
+									<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="100%" alt="TypeScript" />
 									<div class="absolute bottom-0 flex-col items-center hidden mb-6 group-hover:flex">
 										<span class="relative z-10 p-3 text-xs leading-none rounded-lg text-white whitespace-no-wrap bg-gradient-to-r from-primary-800 to-secondary-600 shadow-lg">
 											TypeScript
