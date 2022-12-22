@@ -1,7 +1,6 @@
 ---
 import Icon from "astro-icon";
-import { Picture } from '@astrojs/image/components';
-
+import { Image } from '@astrojs/image/components';
 ---
 
 <section class="scroll-mt-16 bg-primary-100 dark:bg-slate-800" id="projects">
@@ -18,7 +17,7 @@ import { Picture } from '@astrojs/image/components';
 		<div class="grid items-stretch gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 my-12 antialiased">
 			<div class="relative flex h-full flex-col p-2">
 				<div class="mockup-window border bg-base-300">
-					<Picture
+					<Image
 						class="flex justify-center w-full object-cover object-center rounded-lg shadow-md"
 						src={import('~/assets/images/mymovies_portfolio.webp')}
 						widths={[377, 516, 688, 900]}
@@ -113,7 +112,7 @@ import { Picture } from '@astrojs/image/components';
 			</div>
 			<div class="relative flex h-full flex-col p-2">
 				<div class="mockup-window border bg-base-300">
-					<Picture
+					<Image
 						class="flex justify-center w-full object-cover object-center rounded-lg shadow-md"
 						src={import('~/assets/images/spoura.webp')}
 						widths={[377, 516, 688, 900]}
@@ -207,7 +206,7 @@ import { Picture } from '@astrojs/image/components';
 			</div>
 			<div class="relative flex h-full flex-col p-2">
 				<div class="mockup-window border bg-base-300">
-					<Picture
+					<Image
 						class="flex justify-center w-full object-cover object-center rounded-lg shadow-md"
 						src={import('~/assets/images/issuetrack_portfolio.webp')}
 						widths={[377, 516, 688, 900]}
@@ -302,7 +301,7 @@ import { Picture } from '@astrojs/image/components';
 			</div>
 			<div class="relative flex h-full flex-col p-2">
 				<div class="mockup-window border bg-base-300">
-					<Picture
+					<Image
 						class="flex justify-center w-full object-cover object-center rounded-lg shadow-md"
 						src={import('~/assets/images/mymovies_portfolio.webp')}
 						widths={[377, 516, 688, 900]}
