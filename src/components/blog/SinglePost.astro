@@ -42,7 +42,7 @@ const { post, url } = Astro.props;
 		>
 			{post.Content ? <post.Content /> : <Fragment set:html={post.body} />}
 		</div>
-		<div class="container mx-auto px-6 sm:px-6 max-w-3xl mt-8 flex justify-between flex-col sm:flex-row">
+		<div class="container mx-auto px-6 sm:px-6 max-w-3xl mt-8 grid justify-between grid-cols-2">
 			<PostTags tags={post.tags} class="mr-5" />
 			<SocialShare
 				url={url}
