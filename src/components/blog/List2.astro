@@ -1,0 +1,13 @@
+---
+import Item from '~/components/blog/ListItem2.astro';
+
+const { posts } = Astro.props;
+---
+
+<div class="">
+	{
+		posts.map((post) => (
+			<Item post={post} />
+		))
+	}
+</div>
