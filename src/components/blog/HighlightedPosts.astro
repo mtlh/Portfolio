@@ -1,9 +1,8 @@
 ---
 import { findPostsByIds } from '~/utils/posts';
-import List from './List2.astro';
+import Grid from './Grid.astro';
 
 const ids = [
-	'mymovies-casestudy',
 	'mymovies-casestudy',
 	'mymovies-casestudy',
 	'mymovies-casestudy',
@@ -21,6 +20,6 @@ const posts = await findPostsByIds(ids);
 				Including trending topics, tricks I want to share or project casestudies.
 			</p>
 		</div>
-		<List posts={posts} />
+		<Grid posts={posts} />
 	</div>
 </section>
