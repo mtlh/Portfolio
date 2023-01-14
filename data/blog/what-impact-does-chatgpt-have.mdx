@@ -1,0 +1,83 @@
+---
+publishDate: 'January 13 2023'
+title: 'What impact does chatGPT have in web dev Today?'
+description: 'Discussion about the pros, cons of chatGPT and whats to come in the near future... '
+image: '~/assets/images/chatGPT/chatgpt_thumb.webp'
+tags: [chatgpt, openai, web, python]
+canonical: https://mharvey.vercel.app/blog/what-impact-does-chatgpt-have
+---
+
+import { Image, Picture } from '@astrojs/image/components';
+
+### V3 is here and the world is going crazy...
+
+Over the last few months this new AI has been taking over the world via social media and this post is to have my take on what the future holds.
+You must use prompts to interact and it will provide mostly informative responses with its dataset, the next release/update is due in Q2 2023. 
+In case you dont already know the basics here is a little description from the AI itself:
+
+<Image src={import('~/assets/images/chatGPT/chatgpt_about.png')} alt="About ChatGPT"/>
+
+With this knowledge, I am going to dive into the interesting areas of discussion...
+
+There has been talk of development phasing out due to this new innovation but it is clear how developers will be required to maintain and tackle complex challenges. It seems chatGPT (at its current capacity) 
+cannot solve in depth issues without an incredibly large preset of context. Therefore it can be used to solve small bitesize problems that will reduce overhead, an example of where it functions almost flawlessly 
+is producing coding challenge solutions, similar to which many developers face in interviews.
+
+Lets use this to solve a trivial puzzle, advent of code is something that I believe all developers should try out yearly and helps people with problem solving. Day 1 of this year (2022) provided a simple 
+answer that would be good to test here. [Day 1 Puzzle](https://adventofcode.com/2022/day/1)
+
+<Image src={import('~/assets/images/chatGPT/chatgpt_solution.png')} alt="Day 1 Solution"/>
+
+While this solution works, the key point. I want to look at the similarities compared to my personal solution:
+
+```go
+// Get Data from text file
+text_file = open("input.txt", "r")
+data = text_file.read()
+text_file.close()
+data = data.splitlines()
+eachelf = []
+numarr = []
+// Remove all /n or blank occurances
+for num in data:
+    if num != "":
+        numarr.append(num)
+    else:
+        eachelf.append(numarr)
+        numarr = []
+// Create array of max value per elf
+calcount = []
+for elf in eachelf:
+    elfnum = 0
+    for cal in elf:
+        elfnum += int(cal)
+    calcount.append(elfnum)
+
+// Get top value from array
+def getTop(calcount):
+    maxcal = 0
+    for elf in calcount:
+        if elf > maxcal:
+            maxcal = elf
+    return int(maxcal)
+
+// Output answer
+print(getTop(calcount))
+```
+
+As you can see there is some significant differences but common themes. The AI's response was much more simple and direct, however my solution is more comprehensive by knowing that the input 
+can vary beyond the limited example given. They both utilize a very similar getMax function but one is string based and the other array based. This shows how it can solve minified areas of a larger puzzle 
+well but still struggles with context of how the functions will be used down the road. This is why developers will still be promient members of any development business as you cannot rely on perfect solutions 
+to endless issues. It will instead be a great tool to speed up processes so humans can focus on the impact tasks compared to automatable areas.
+
+### Upcoming Legal concerns
+
+Another point with this tool is that it potentially faces several legal challenges about intellectual property before being used in the enterprise. This is mainly due to concerns about the exact dataset 
+that it uses. Google, and other search engines will be highly critical of this; similar to Github Copilot and how it can scan private repos for data to train and suggest common themes. I highly doubt that 
+this will be adopted largely within the next year but will gain over time depending on how it progresses. Also, it seems that there will be a paid per query approach in future that will limit the public 
+feedback and hype on social media. The way we build web apps seems set to continue alongside chatGPT as a tool for some...
+
+Personally, I will be using this to solve relevant minor issues until it becomes paid. It remains highly important to understand the output from the AI to use these correctly, and as result it only raises 
+the bar for developers looking to enter the area and doesnt displace existing experienced engineers.
+
+Thank you for reading.
