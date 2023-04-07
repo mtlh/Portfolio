@@ -2,30 +2,24 @@
 import Icon from "astro-icon";
 ---
 
-<section class="relative scroll-mt-16 bg-primary-100 dark:bg-slate-800" id="links">
+<section class="relative scroll-mt-16 bg-primary-100 dark:bg-slate-800 py-10" id="links">
+	<div class="max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-12">
+		<p class="text-base text-primary-600 dark:text-primary-200 font-semibold tracking-wide uppercase">My Links</p>
+		<h2 class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+			Want to see me elsewhere?
+		</h2>
+		<p class="max-w-3xl mx-auto sm:text-center text-xl text-gray-600 dark:text-slate-400">
+			Follow the links below to find out more about me...
+		</p>
+	</div>
 	<div class="max-w-screen-md mx-auto p-5">
-		<div class="px-8 py-8 md:py-16 sm:px-6 mx-auto md:px-24 lg:px-8 lg:py-20 max-w-6xl">
-			<div class="grid grid-cols-3 gap-4 md:grid-cols-6">
-				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg"
-					href="/blog"
-					aria-label="Link to my blog"
-				>
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center cursor-pointer">
-						<Icon name="tabler:note" class="w-15 h-15" />
-					</div>
-				</a>
-				<div class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg"
-					
-				>
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center cursor-pointer">
-						<Icon name="tabler:sun" class="w-15 h-15" data-aw-toggle-color-scheme />
-					</div>
-				</div>
+		<div class="mx-auto max-w-xs">
+			<div class="grid grid-cols-2 gap-24 m-auto">
 				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg"
 					href="https://github.com/matthew-harvey/" target="_blank"
 					aria-label="Link to my Github"
 				>
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center cursor-pointer">
+					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 hover:text-primary-800 font-heading items-center cursor-pointer">
 						<Icon name="tabler:brand-github" class="w-15 h-15" />
 					</div>
 				</a>
@@ -33,24 +27,8 @@ import Icon from "astro-icon";
 					href="https://www.linkedin.com/in/m-harvey/" target="_blank"
 					aria-label="Link to my Linkedin"
 				>
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading items-center cursor-pointer">
+					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 hover:text-primary-800 font-heading items-center cursor-pointer">
 						<Icon name="tabler:brand-linkedin" class="w-15 h-15" />
-					</div>
-				</a>
-				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg"
-					href="https://mharvey.netlify.app/MatthewHarvey-CV.pdf" target="_blank"
-					aria-label="Link to my CV"
-				>
-					<div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500">
-						<Icon name="tabler:file-info" class="w-15 h-15" />
-					</div>
-				</a>
-				<a class="text-center dark:md:border-slate-500 mb-10 md:mb-0 items-center inline-block text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg" 
-					href="mailto:matthewtlharvey@gmail.com" target="_blank"
-					aria-label="Link to my Email"
-				>
-					<div class="text-2xl items-center font-bold lg:text-2xl xl:text-2xl text-primary-500 font-heading cursor-pointer">
-						<Icon name="tabler:mail-forward" class="w-15 h-15" />
 					</div>
 				</a>
 			</div>
