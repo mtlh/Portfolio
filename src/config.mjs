@@ -1,7 +1,7 @@
 export const SITE = {
 	name: 'Matthew Harvey',
 
-	origin: 'https://mharvey.vercel.app',
+	origin: 'https://mtlh.vercel.app',
 	basePathname: '/',
 	trailingSlash: false,
 
