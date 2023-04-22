@@ -56,13 +56,21 @@ import { getBlogPermalink, getHomePermalink } from '~/utils/permalinks';
 			<ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
 				<li>
 					<a
-						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center transition ease-in-out scroll-smooth"
+						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 items-center transition ease-in-out scroll-smooth flex md:hidden"
+						href={"https://mtlh.vercel.app/#skills"}>Skills</a
+					>
+					<a
+						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 items-center transition ease-in-out scroll-smooth hidden md:flex"
 						href={getHomePermalink() + "#skills"}>Skills</a
 					>
 				</li>
 				<li>
 					<a
-						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center scroll-smooth"
+						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 items-center transition ease-in-out scroll-smooth flex md:hidden"
+						href={"https://mtlh.vercel.app/#projects"}>Projects</a
+					>
+					<a
+						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 items-center transition ease-in-out scroll-smooth hidden md:flex"
 						href={getHomePermalink() + "#projects"}>Projects</a
 					>
 				</li>
@@ -74,7 +82,11 @@ import { getBlogPermalink, getHomePermalink } from '~/utils/permalinks';
 				</li>
 				<li>
 					<a
-						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 flex items-center scroll-smooth"
+						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 items-center transition ease-in-out scroll-smooth flex md:hidden"
+						href={"https://mtlh.vercel.app/#contact"}>Contact</a
+					>
+					<a
+						class="font-small hover:text-gray-900 dark:hover:text-white px-4 py-3 items-center transition ease-in-out scroll-smooth hidden md:flex"
 						href={getHomePermalink() + "#contact"}>Contact</a
 					>
 				</li>
