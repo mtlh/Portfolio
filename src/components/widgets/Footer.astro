@@ -5,10 +5,10 @@ import ToggleTheme from '../core/ToggleTheme.astro';
 
 <footer class="border-t border-gray-200 dark:border-slate-800">
 	<div class="max-w-6xl mx-auto px-4 sm:px-6">
-		<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 gap-y-8 sm:gap-8 py-8 md:pb-12">
-			<div class="text-gray-800 dark:text-gray-300 font-medium mb-2">
-				<a href="/">Home</a>
-				<ul class="text-sm py-2">
+		<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 gap-y-4 sm:gap-8 py-6">
+			<div class="text-gray-800 dark:text-gray-300 font-medium mb-2 text-md">
+				<a href="/" class="underline" >Home</a>
+				<ul class="py-2">
 					<li class="mb-2">
 						<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
 							href="#skills"
@@ -18,20 +18,20 @@ import ToggleTheme from '../core/ToggleTheme.astro';
 					<li class="mb-2">
 						<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
 							href="#history"
-							>History</a
+							>My Journey</a
 						>
 					</li>
 					<li class="mb-2">
 						<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
 							href="#projects"
-							>Projects</a
+							>Featured Projects</a
 						>
 					</li>
 				</ul>
 			</div>
-			<div class="text-gray-800 dark:text-gray-300 font-medium mb-2">
-				<a href="/blog">Blog</a>
-				<ul class="text-sm py-2">
+			<div class="text-gray-800 dark:text-gray-300 font-medium mb-2 text-md">
+				<a href="/blog" class="underline">Blog</a>
+				<ul class="py-2">
 					<li class="mb-2">
 						<a class="text-gray-600 hover:text-gray-700 dark:text-gray-400 transition duration-150 ease-in-out"
 							href="/spoura-why-i-love-svelte"
@@ -52,16 +52,16 @@ import ToggleTheme from '../core/ToggleTheme.astro';
 					</li>
 				</ul>
 			</div>
-			<div class="text-gray-800 dark:text-gray-300 font-medium mb-2"><a href="#contact">Contact</a></div>
-			<div class="text-gray-800 dark:text-gray-300 font-medium mb-1">
-				<ul class="text-sm py-1 columns-5">
+			<!-- <div class="text-gray-800 dark:text-gray-300 font-medium mb-2 text-lg"><a href="#contact">Contact</a></div> -->
+			<div class="text-gray-800 dark:text-gray-300 font-medium mb-1 col-span-2">
+				<ul class="text-md py-1 columns-5">
 					<li class="mb-1">
 						<a
 							class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
 							aria-label="Linkedin"
 							href="https://www.linkedin.com/in/mtlh/" target="_blank"
 						>
-							<Icon name="tabler:brand-linkedin" class="w-5 h-5" />
+							<Icon name="tabler:brand-linkedin" class="w-8 h-8" />
 						</a>
 					</li>
 					<li class="mb-1">
@@ -70,7 +70,7 @@ import ToggleTheme from '../core/ToggleTheme.astro';
 							aria-label="Github"
 							href="https://github.com/mtlh/" target="_blank"
 						>
-							<Icon name="tabler:brand-github" class="w-5 h-5" />
+							<Icon name="tabler:brand-github" class="w-8 h-8" />
 						</a>
 					</li>
 					<li class="mb-1">
@@ -79,7 +79,7 @@ import ToggleTheme from '../core/ToggleTheme.astro';
 							aria-label="Email"
 							href="mailto:matthewtlharvey@gmail.com"
 						>
-							<Icon name="tabler:mail-forward" class="w-5 h-5" />
+							<Icon name="tabler:mail-forward" class="w-8 h-8" />
 						</a>
 					</li>
 					<li class="mb-1">
@@ -88,7 +88,7 @@ import ToggleTheme from '../core/ToggleTheme.astro';
 							aria-label="CV"
 							href="/MatthewHarveyCV.pdf" target="_blank"
 						>
-							<Icon name="tabler:file-info" class="w-5 h-5" />
+							<Icon name="tabler:file-info" class="w-8 h-8" />
 						</a>
 					</li>
 					<li class="mb-1">
