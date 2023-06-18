@@ -2,7 +2,10 @@
 
 **My Portfolio** is made to highlight my best project work, using both **Astro + Tailwind CSS** to make it shine. 
 
-My socials: 
+My socials:
+
+<br>
+
 <a href="https://www.linkedin.com/in/mtlh/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
 <a href="https://mtlh.vercel.app" target="_blank"><img src="https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=dev.to&logoColor=white"></a> 
 
@@ -14,7 +17,7 @@ My socials:
 
 <br>
 
-<img src="./screenshot.png" alt="AstroWind Theme Screenshot">
+<img src="./screenshot.png" alt="Portfolio homepage screenshot">
 
 <br>
 
@@ -64,13 +67,13 @@ prefer.
 
 Clone this repository on your own GitHub account and deploy to Netlify:
 
-[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/onwidget/astrowind)
+[![Netlify Deploy button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mtlh/Portfolio)
 
 #### Deploy to Vercel
 
 Clone this repository on your own GitHub account and deploy to Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmtlh%2FPortfolio)
 
 <br>
 
