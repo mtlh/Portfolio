@@ -1,5 +1,6 @@
 ---
 import { Image } from '@astrojs/image/components';
+import Icon from 'astro-icon';
 ---
 
 <section class="bg-cover bg-no-repeat bg-scroll md:bg-fixed h-screen" style="background-image: linear-gradient(270deg,rgba(163, 233, 235, .16) 0%,rgba(163, 233, 235, .56) 18.45%,rgba(163, 233, 235, .8) 49.67%,rgba(163, 233, 235, .56) 82.52%,rgba(163, 233, 235, .196364) 99.7%,rgba(189, 40, 40, 0) 99.71%, rgba(203, 56, 55, 0) 99.72%,rgba(203, 56, 55, .16) 99.73%),url(herobackground.png)">
@@ -7,7 +8,7 @@ import { Image } from '@astrojs/image/components';
 		<div class="py-12 md:py-20">
 			<div class="text-center pb-20 md:pb-4 max-w-5xl mx-auto">
 				<Image
-					class="m-auto rounded-md w-[10rem] my-6"
+					class="m-auto rounded-md md:w-[10rem] w-[8rem] md:my-6 my-1"
 					src={import('~/assets/images/hero_dev_thumb.webp')}
 					widths={[377, 516, 688, 900]}
 					sizes="100vw"
@@ -23,26 +24,26 @@ import { Image } from '@astrojs/image/components';
 						>Software Developer
 					</span>
 				</h2>
-				<div class="max-w-3xl md:text-left mx-auto">
-					<p class="text-xl text-gray-600 mb-8 dark:text-slate-600 md:px-8">
+				<div class="max-w-3xl text-left mx-auto">
+					<p class="text-xl text-gray-600 mb-8 dark:text-slate-600 px-8">
 						Over a year of previous experience in an Agile Development Team using Java, JavaScript, HTML/CSS and SQL.
 						Relevant customer service experience in a large operation, studying BSc Computer Science at De Montfort University.
 					</p>
 					<div class="max-w-none px-6 flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4">
 						<div class="flex w-full sm:w-auto">
 							<a
-								class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 sm:mb-0 w-full"
-								href="#projects"
+								class="btn text-white border border-gray-600 dark:bg-gray-70 bg-gray-900 hover:bg-gray-700 hover:border-gray-800 sm:mb-0 w-full"
+								href="https://www.linkedin.com/in/mtlh/" target="_blank"
 							>
-								View Projects &DownArrow;
+								Connect <Icon name="tabler:brand-linkedin" class="w-6 h-6 ml-1" />
 							</a>
 						</div>
 						<div class="flex w-full sm:w-auto">
 							<a
-								class="btn text-white border border-gray-600 dark:bg-gray-70 bg-gray-900 hover:bg-gray-700 hover:border-gray-800 sm:mb-0 w-full"
-								href="https://www.linkedin.com/in/mtlh/" target="_blank"
+								class="btn text-white border border-primary-600 bg-primary-600 hover:bg-primary-800 hover:border-primary-800 sm:mb-0 w-full"
+								href="#projects"
 							>
-								Connect &RightArrow;
+								View Projects &DownArrow;
 							</a>
 						</div>
 					</div>
